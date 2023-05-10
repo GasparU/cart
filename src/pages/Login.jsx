@@ -1,4 +1,5 @@
 import useAuthentication from "../hooks/useAuthentication"
+import "./style/login.css"
 
 const Login = () => {
 
@@ -13,16 +14,16 @@ const Login = () => {
     }
 
     return (
-        <form onSubmit={handleLogin}>
+        <form onSubmit={handleLogin} className="login__container">
             <div>
-                <label htmlFor="email">Email</label>
-                <input type="text" id='email' />
+                <label className="login__label" htmlFor="email">Email</label>
+                <input className="login__input" type="text" id='email' />
             </div>
             <div>
-                <label htmlFor="password">Password</label>
-                <input type="password" id='password' />
+                <label className="login__label" htmlFor="password">Password</label>
+                <input className="login__input" type="password" id='password' />
             </div>
-            <button>Sing in</button>
+            <button className="login__btn">Sing in</button>
         </form>
     )
 }

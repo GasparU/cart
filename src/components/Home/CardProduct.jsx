@@ -4,19 +4,26 @@ import { useNavigate } from 'react-router-dom'
 import useCrudCart from './../../hooks/useCrudCart';
 
 const CardProduct = ({ product }) => {
+
     const navigate = useNavigate()
+
     const { addProductCart } = useCrudCart()
+
     const handleSelectProduct = () => {
         navigate(`/product/${product.id}`)
     }
+
     const handlebtnClick = (e) => {
         e.stopPropagation()
         const data = {
             quantity: 1,
             productId: product.id
         }
+
         addProductCart(data)
     }
+
+
     return (
         <article onClick={handleSelectProduct} className='product'>
             <header className='product__header'>

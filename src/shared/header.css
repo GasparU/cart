@@ -1,0 +1,13 @@
+.header__container {
+    position: relative;
+}
+
+.header__links {
+    position: fixed;
+    top: 70px;
+    list-style: none;
+}
+
+/* .header__title {
+    position: fixed;
+} */

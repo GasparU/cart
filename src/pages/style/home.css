@@ -1,4 +1,15 @@
+.home__container-global {
+  position: relative;
+}
+
+.home__container-filter {
+  position: fixed;
+  top: 200px;
+}
+
 .home__container {
+  position: absolute;
+  left: 150px;
   display: flex;
   flex-wrap: wrap;
   gap: 3em;

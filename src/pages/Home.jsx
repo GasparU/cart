@@ -18,9 +18,9 @@ const Home = () => {
     const productFilter = productsGlobal?.filter(prod => prod.title.toLowerCase().includes(inputValue))
     return (
         <div className='home__container-global'>
-            <div>
+            <div className='home__container-filter'>
                 <div className='home__input-container'>
-                    <input className='home__input' onChange={handleChangeInput} ref={input} type='text' placeholder='¿Qué estás buscando?'></input><i class='bx bx-search' ></i>
+                    <input className='home__input' onChange={handleChangeInput} ref={input} type='text' placeholder='¿Qué estás buscando?'></input><i className='bx bx-search' ></i>
                 </div>
                 <FilterCategory />
             </div>
