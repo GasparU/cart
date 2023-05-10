@@ -34,12 +34,14 @@ footer button {
 
 .productIdInfo__buttom {
   background: #f85555;
+  border-radius: 10px;
   color: #fff;
   font-size: 1.1rem;
   margin-bottom: 50px;
   padding: 15px;
   width: 100%;
   border: none;
+  cursor: pointer;
 }
 
 .productIdInfo__price-container {
@@ -52,7 +54,11 @@ footer button {
   margin-bottom: 20px;
   color: #515151;
   font-family: Yantramanav, sans-serif;
-  width: 100%;
+  width: 100px;
+  height: 30px;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
 }
 
 .productIdInfo__price-text {
@@ -66,4 +72,11 @@ footer button {
   font-weight: 600;
   margin-left: 10px;
   color: #515151;
+}
+
+.productIdInfo__buttom-cart {
+  background: #fff;
+  border: 1px solid #ccca;
+  height: 30px;
+  width: 30px;
 }

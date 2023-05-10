@@ -35,9 +35,9 @@ const ProductIdInfo = ({ product }) => {
                 <div>
                     <span className='productIdInfo__price-text'>Quantity</span>
                     <div className='productIdInfo__add'>
-                        <button onClick={handleMinus}>-</button>
+                        <button className='productIdInfo__buttom-cart' onClick={handleMinus}>-</button>
                         <div>{quantity}</div>
-                        <button onClick={handlePlus}>+</button>
+                        <button className='productIdInfo__buttom-cart' onClick={handlePlus}>+</button>
                     </div>
                 </div>
                 <button onClick={handleAddToCart} className='productIdInfo__buttom'>Add to Card <i className='bx bx-cart'></i></button>

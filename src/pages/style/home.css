@@ -3,4 +3,26 @@
   flex-wrap: wrap;
   gap: 3em;
   margin: 50px;
+  /* max-width: 100%; */
+}
+
+.home__input-container {
+  display: flex;
+  align-items: center;
+}
+
+.home__input {
+  border: 1px solid #ccc;
+  height: 25px;
+}
+
+.bx-search {
+  background-color: #f85555;
+  color: white;
+  padding: 4px;
+  height: 20px;
+}
+
+.home__container-global {
+  display: flex;
 }

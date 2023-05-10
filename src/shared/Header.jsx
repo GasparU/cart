@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Breadcrumb from 'react-bootstrap/Breadcrumb';
+// import Breadcrumb from 'react-bootstrap/Breadcrumb';
 
 const Header = () => {
     return (
@@ -8,6 +8,7 @@ const Header = () => {
             <h1><Link to="/">e-commerce</Link></h1>
             <nav>
                 <ul>
+                    <li><Link to="/">Home</Link></li>
                     <li><Link to="/login">Login</Link></li>
                     <li><Link to="/register">Register</Link></li>
                     <li><Link to="/purchases">Purchases</Link></li>

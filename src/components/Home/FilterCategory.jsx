@@ -1,8 +1,9 @@
 import React, { useEffect } from 'react'
 import useFetch from '../../hooks/useFetch'
 import { useDispatch } from 'react-redux'
-
+import "./style/filterCategory.css"
 import { getAllProductsThunk } from '../../store/slices/products.slice'
+
 
 const FilterCategory = () => {
     const url = "https://e-commerce-api-v2.academlo.tech/api/v1/categories"
@@ -28,12 +29,12 @@ const FilterCategory = () => {
         <article>
             <h3>Category</h3>
             <ul>
-                <li onClick={handleClickAllProducts}>All Products</li>
+                <li className='category' onClick={handleClickAllProducts}>All Products</li>
                 {
-                    categories?.map(category => <li onClick={() => handleClickCategories(category.id)} key={category.id}>{category.name}</li>)
+                    categories?.map(category => <li className='category' onClick={() => handleClickCategories(category.id)} key={category.id}>{category.name}</li>)
                 }
             </ul>
-        </article>
+        </article >
     )
 }
 

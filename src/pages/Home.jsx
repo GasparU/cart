@@ -17,9 +17,13 @@ const Home = () => {
     console.log(inputValue)
     const productFilter = productsGlobal?.filter(prod => prod.title.toLowerCase().includes(inputValue))
     return (
-        <div>
-            <input onChange={handleChangeInput} ref={input} type='text' />
-            <FilterCategory />
+        <div className='home__container-global'>
+            <div>
+                <div className='home__input-container'>
+                    <input className='home__input' onChange={handleChangeInput} ref={input} type='text' placeholder='¿Qué estás buscando?'></input><i class='bx bx-search' ></i>
+                </div>
+                <FilterCategory />
+            </div>
             <div className='home__container'>
                 {
                     productFilter?.map(prod => (
