@@ -1,0 +1,28 @@
+.producid__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  height: 100%;
+  padding: 0 50px;
+
+}
+
+.producid__container-card {
+  display: flex;
+  padding: 0 50px;
+  /* margin: 0 50px; */
+  width: 100%;
+  max-width: 1300px;
+}
+
+.productid__sliderimg {
+  padding: 50px;
+  width: 100%;
+}
+
+.productid__productinfo {
+  padding: 50px;
+  width: 50%;
+}

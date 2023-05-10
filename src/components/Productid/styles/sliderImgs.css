@@ -1,0 +1,15 @@
+.sliderImgs__container {
+    width: 50%;
+    padding: 0 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.sliderImg__img {
+
+    max-width: 50vw;
+    object-fit: contain;
+    height: 350px;
+}
