@@ -4,13 +4,13 @@ import axios from "axios";
 const useFetch = (url) => {
   const [apiInfo, setApiInfo] = useState();
 
-  const getProductById = () => {
+  const getApi = () => {
     axios
       .get(url)
       .then((res) => setApiInfo(res.data))
       .catch((err) => console.log(err));
   };
-  return [apiInfo, getProductById];
+  return [apiInfo, getApi];
 };
 
 export default useFetch;
