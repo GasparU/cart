@@ -9,11 +9,11 @@ const Header = () => {
             <h1 className='header__title'><Link to="/">e-commerce</Link></h1>
             <nav>
                 <ul className='header__links'>
-                    <li><Link to="/"><i class='bx bxs-home' ></i>Home</Link></li>
-                    <li><Link to="/login"><i class='bx bxs-user' ></i>Login</Link></li>
-                    <li><Link to="/register"><i class='bx bxs-user-plus' ></i>Register</Link></li>
-                    <li><Link to="/purchases"><i class='bx bxs-purchase-tag-alt' ></i>Purchases</Link></li>
-                    <li><Link to="/cart"><i class='bx bxs-cart' ></i>Cart</Link></li>
+                    <li><Link to="/"><i className='bx bxs-home' ></i>Home</Link></li>
+                    <li><Link to="/login"><i className='bx bxs-user' ></i>Login</Link></li>
+                    <li><Link to="/register"><i className='bx bxs-user-plus' ></i>Register</Link></li>
+                    <li><Link to="/purchases"><i className='bx bxs-purchase-tag-alt' ></i>Purchases</Link></li>
+                    <li><Link to="/cart"><i className='bx bxs-cart' ></i>Cart</Link></li>
                 </ul>
             </nav>
             {/* <Breadcrumb>

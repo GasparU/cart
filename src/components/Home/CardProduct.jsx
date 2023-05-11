@@ -7,7 +7,7 @@ const CardProduct = ({ product }) => {
 
     const navigate = useNavigate()
 
-    const { addProductCart } = useCrudCart()
+    const { addProductToCart } = useCrudCart()
 
     const handleSelectProduct = () => {
         navigate(`/product/${product.id}`)
@@ -20,7 +20,7 @@ const CardProduct = ({ product }) => {
             productId: product.id
         }
 
-        addProductCart(data)
+        addProductToCart(data)
     }
 
 

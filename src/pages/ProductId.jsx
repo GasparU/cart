@@ -12,7 +12,7 @@ const ProductId = () => {
     const [product, getProductById] = useFetch(url)
     useEffect(() => {
         getProductById()
-    }, [])
+    }, [id])
 
     return (
         <div className='producid__container'>
