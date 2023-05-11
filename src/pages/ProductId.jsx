@@ -4,7 +4,7 @@ import useFetch from '../hooks/useFetch'
 import ProductIdInfo from '../components/Productid/ProductIdInfo'
 import SliderImgs from '../components/Productid/SliderImgs'
 import SimilarProducts from '../components/Productid/SimilarProducts'
-import "./style/productid.css"
+import "./style/productId.css"
 
 const ProductId = () => {
     const { id } = useParams()
