@@ -12,7 +12,7 @@ const Login = () => {
         const data = { email, password }
         loginUser(data)
     }
-
+    console.log("Saludos")
     return (
         <form onSubmit={handleLogin} className="login__container">
             <div>
