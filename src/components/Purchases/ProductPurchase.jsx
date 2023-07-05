@@ -4,7 +4,7 @@ const ProductPurchase = ({ prodPurchase }) => {
     console.log(prodPurchase)
     return (
         <article>
-            <img src={prodPurchase.product.images[0].url} alt='' />
+            <img src={prodPurchased.product?.productImgs[0].url} alt='' />
             <h3>{prodPurchase.product.title}</h3>
             <span>{prodPurchase.quantity}</span>
             <span>{prodPurchase.quantity * prodPurchase.product.price}</span>

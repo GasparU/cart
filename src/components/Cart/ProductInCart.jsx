@@ -7,11 +7,11 @@ const ProductInCart = ({ prodCart }) => {
     const handleDeleteCart = () => {
         deleteProductFromCart(prodCart.id)
     }
-    console.log(prodCart)
+
     return (
         <article>
             <header>
-                <img src={prodCart.product.images[0].url} />
+                <img src={prodCart?.product?.productImgs[0]?.url} />
             </header>
             <section>
                 <h3>{prodCart.product.title}</h3>

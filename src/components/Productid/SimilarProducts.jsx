@@ -6,7 +6,8 @@ import { useNavigate } from 'react-router-dom'
 
 const SimilarProducts = ({ product }) => {
 
-    const url = `https://e-commerce-api-v2.academlo.tech/api/v1/products?categoryId=${product?.categoryId}`
+    const URL_BASE = import.meta.env.VITE_REACT_APP_URL
+    const url = `${URL_BASE}/products?categoryId=${product?.categoryId}`
 
 
     // const navigate = useNavigate()
